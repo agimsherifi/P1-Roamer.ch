@@ -113,6 +113,9 @@ a:hover {
   display: none;
   
 }
+.button2 {
+  display: none
+}
 
 main#main{
   height: 1000px;
@@ -920,7 +923,7 @@ footer .footer-bottom a {
     position: fixed;
     display: block;
     top: 223px;
-    height: 45px;
+    height: 35px;
     padding-top: 19px;
     left: 0;
     width: 100%;
@@ -929,13 +932,19 @@ footer .footer-bottom a {
     transition: top 0.3s ease-in-out; 
     border-bottom: 1px solid var(--primary-color);
   }
+  header nav ul {
+    z-index: 99;
+    height: 10px;
+   
+    
+}
   
   .content {
     margin-top: 100px; 
   }
   .menu .mini-logo {
     display: block;
-    width: 10%;
+    width: 9%;
   }
   
   .menu.show-mini-logo .mini-logo {
@@ -945,7 +954,7 @@ footer .footer-bottom a {
   
   .mini-logo {
     position: fixed;
-    top: 15px;
+    top: 9px;
     left: 10px;
     display: none;
   }
@@ -969,12 +978,27 @@ a:hover {
   justify-content: center;
   padding-left: 550px;
   padding-right: 15px;
+  padding-bottom: 30px;
   border: none;
   color: var(--primary-color);
   text-decoration: none;
   font-weight: bold;
   width: 100px;
   font-size: 20px;
+}
+.button2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 35px;
+  border: none;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+  width: 100px;
+  font-size: 20px;
+  padding-top: 0px;
+  gap: 10px;
 }
 
 .button1 i {
