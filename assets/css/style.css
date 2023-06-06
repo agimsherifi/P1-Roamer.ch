@@ -795,22 +795,18 @@ footer .footer-top ul.list li a {
 }
 .fa-facebook{
   font-size: 12px;
-    color: var(--primary-color);
+    
     text-decoration: none;
     transition: all .9s;
 }
-.fa-twitter{
+.fa-instagram{
   font-size: 12px;
-    color: var(--primary-color);
+    
     text-decoration: none;
     transition: all .9s;
 }
-.fa-youtube{
-  font-size: 12px;
-    color: var(--primary-color);
-    text-decoration: none;
-    transition: all .1s;
-}
+
+
 footer .footer-top ul.list li a:hover {
     color: var(--primary-color);
 }
@@ -822,7 +818,7 @@ footer .footer-top ul.list li a:hover {
 footer .footer-top .social-media ul {
     list-style-type: none;
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 
 
@@ -833,7 +829,8 @@ footer .footer-top .social-media a{
 }
 
 footer .footer-top .social-media a:hover {
-  transform: scale(1.2);
+  
+  color: var(--primary-color);
 }
 
 footer .footer-top .social-media i {
