@@ -465,11 +465,13 @@ video {
   justify-content: center;
   text-align: center;
   background-color: #f8f8f8;
+  height: 80px;
 }
 .kategori h1{
   font-size: 30px ;
   margin-bottom: 0px;
   letter-spacing: 1px;
+  padding-top: 20px;
   
 }
 .kategorimobile{
@@ -477,20 +479,29 @@ video {
 }
 section#marketing{
   background-color: #f8f8f8;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+
 }
 .marketing1{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
   background-color: #f8f8f8;
-  padding-left: 110px;
   padding-bottom: 60px;
   margin: 0;
+  
+}
+.marketing1mobile{
+  display: none;
 }
 
 .marketing1 a{
   
-  translate: -290% 97%;
+  font-weight:bolder;
   
   
 }
@@ -759,7 +770,7 @@ padding-bottom: 95px;
   footer {
     padding: 80px 0px 0px 0px;
     background-color: #222222;
-    border-top: 1px solid rgba(205, 164, 94, 0.4);
+    
     
 }
 
@@ -881,20 +892,23 @@ footer .footer-top form button:hover{
   color: var(--primary-color);
   background-color: #FFFFFF;
 }
-
+.ndarja{
+  padding: 13px;
+  border-bottom: 0.5px solid var(--primary-color);
+}
 footer .footer-bottom {
     background-color: #222222;
-    margin-top: 40px;
-    padding: 35px 0px;
+    margin-top: 0px;
+    padding: 20px 0px;
     display: grid;
-    grid-template-columns: 1fr;
-    border-top: 1px solid var(--primary-color);
+    grid-template-columns: 1fr 1fr;
+    
 }
 
 footer .footer-bottom p {
     color: rgb(255, 255, 255);
     font-size: 16px;
-    text-align: center;
+    text-align: right;
 }
 
 footer .footer-bottom p:last-child {
@@ -910,7 +924,8 @@ footer .footer-bottom a {
   display: flex;
   justify-items: center;
   justify-self: start;
-  padding-left: 455px;
+  margin-left: -20px;
+
 }
 .micro-logo {
   display: inline-block;
@@ -924,8 +939,13 @@ footer .footer-bottom a {
   
 }
 
+.footer-bottom .footerleft{
+  padding-top: 15px;
+  justify-items: right;
+  justify-self: end;
+}
 /* MOBILE VERSION*/
-@media (max-width: 576px) {
+@media (max-width: 576px){
   body {
       background-position: center center;
   }
@@ -1273,11 +1293,40 @@ main#main {
   letter-spacing: 1px;
   
 }
+
+section#marketing{
+  background-color: #f8f8f8;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+
+}
+.marketing1{
+  width: 170px;
   
- section#marketing{
-  display: none;
- }
- 
+}
+.marketing1mobile{
+  width: 170px;
+  
+}
+.marketing1mobile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #f8f8f8;
+  padding-bottom: 60px;
+  margin: 0;
+  
+}
+.marketing1mobile a{
+  
+  font-weight:bolder;
+  
+  
+}
+  
  #historia{
   padding-top: 50px;
   height: 700px;
@@ -1308,15 +1357,18 @@ footer .footer-top {
   max-width: 300px;
 }
 
-
-footer .footer-bottom p {
-  text-align: left;
-  padding-left: 80px;
+footer .footer-bottom{
+  grid-template-columns: 1fr;
+  
+  max-width: 300px;
 }
-
-
-.footer-bottom img{
-
-justify-items: left;
-padding-left: 40px;
+.footer-bottom .footerleft{
+  padding-top: 15px;
+  justify-items: center;
+  justify-self: center;
+  margin-left: -20px;
+}
+footer .footer-bottom p {
+  
+  text-align: center;
 }
