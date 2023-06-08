@@ -766,7 +766,7 @@ padding-bottom: 95px;
 footer .footer-top {
     color: #888888;
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
     gap: 50px;
 }
 
@@ -846,17 +846,20 @@ footer .footer-top form {
     height: 35px;
     border-radius: 15px;
     background-color: #222222;
-    border: 1px solid var(--primary-color);
+    border: 1px solid #888888;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    padding-left: 15px;
 }
 
 footer .footer-top form input {
-    border: 0px;
-    color: #ffffff;
+  border: none;
+  outline: none;
+    color: #888888;
     background-color: transparent;
     margin-left: 15px;
+    width: 90%;
 }
 
 footer .footer-top form button {
@@ -904,6 +907,17 @@ footer .footer-bottom a {
   justify-items: center;
   justify-self: start;
   padding-left: 455px;
+}
+.micro-logo {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url(/assets/image/micrologo.png);
+  background-size: cover;
+  margin-right: 5px;
+  padding-right: 2px;
+  margin-bottom: -5px;
+  
 }
 
 /* MOBILE VERSION*/
@@ -1103,12 +1117,15 @@ main#main {
       font-size: 10px;
   }
   .modelet h3{
-    font-size: 10px;
+    font-size: 13px;
   }
   .carda {
     position: relative;
     display: inline-block;
     
+  }
+  .carda1{
+    padding-bottom: 10px;
   }
   
   .carda::before {
@@ -1215,9 +1232,16 @@ main#main {
     transition: opacity 0.3s ease-in-out;
   }
 
-  
+  section#garancion .video-background{
+    height: 470px;
+  }
+
   section#garancion .content{
     width: 100%;
+  }
+  .sevenyear{
+    width: 400px;
+    
   }
   
   .content h1 {
@@ -1251,14 +1275,20 @@ main#main {
  }
  
  #historia{
-  padding-top: 90px;
-  height: 780px;
+  padding-top: 50px;
+  height: 700px;
+  
+}
+.historia h1{
+  letter-spacing: 1px;
+  font-size: 25px;
+  font-weight: lighter;
 }
 .historia{
   
-  height: 750px;
+  height: 700px;
   justify-content: center;
-padding-bottom: 195px;
+padding-bottom: 35px;
 }
 section#world .siguria {
   margin-top: 0px;
