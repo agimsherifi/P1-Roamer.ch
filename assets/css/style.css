@@ -877,6 +877,10 @@ footer .footer-top form button {
     background-color: var(--primary-color);
     transform: all .4s;
 }
+footer .footer-top form button:hover{
+  color: var(--primary-color);
+  background-color: #FFFFFF;
+}
 
 footer .footer-bottom {
     background-color: #222222;
@@ -912,7 +916,7 @@ footer .footer-bottom a {
   display: inline-block;
   width: 25px;
   height: 25px;
-  background-image: url(/assets/image/micrologo.png);
+  background-image: url(../image/micrologo.png);
   background-size: cover;
   margin-right: 5px;
   padding-right: 2px;
