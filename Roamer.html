@@ -14,7 +14,7 @@
     <header>
         <div class="container">
             <a href="https://www.roamer.ch" target="_blank">
-            <img class="container" src="assets/image/logo.png"></a>
+            <img class="Logo" src="assets/image/logo.png"></a>
         </div>
         <div class="menu" id="mymenu">
             <a href="#" ><img class="mini-logo" src="assets/image/minilogo.png" width="2.5%" alt="Mini Logo"></a> 
@@ -35,8 +35,6 @@
                                 <i class="fa-solid fa-basket-shopping"></i>
                                 <a href="#" class="button1">
                                     <i class="fa-solid fa-bars"></i>
-                                    
-                                    
                             </a> 
                                 
                                 
@@ -118,6 +116,7 @@
     </div>
 </section>
     <section id="modelet">
+        <div class="container">
 <div class="modelet">
     <div class="carda">
         <div class="body-card">
@@ -164,7 +163,7 @@
             <a href="https://roamer.ch/collections/primeline-daydate-ii/products/primeline-daydate-ii-3" target="_blank">
             <h3>PRIMELINE DAYDATE II</h3></a><br>
             <h4>CHF 799.00</h4>
-
+        </div>
         </div>
     </div>
     </div>
@@ -223,6 +222,7 @@
         </div>
     </section>
         <section id="modelet">
+            <div class="container">
     <div class="modelet">
         <div class="carda1">
             <div class="body-card">
@@ -276,7 +276,7 @@
         </div>
         </div>
     </div>
-    
+</div>
         </section>
         <section id="historia">
             <div class="historia">
@@ -316,7 +316,7 @@ video.addEventListener('click', function() {
 });
         </script>
         <section id="world">
-        
+        <div class="container">
             <div class="siguria">
                 <div class="swiss">
                     <div class="swiss-body">
@@ -351,7 +351,7 @@ video.addEventListener('click', function() {
                     </div>
                 </div>
             </div>
-            
+        </div>
         </section>
         <footer>
             <div class="container footer-top">
@@ -397,7 +397,7 @@ video.addEventListener('click', function() {
                     </form>
                 </div>
             </div>
-           <div class="ndarja"></div>
+            <div class="ndarja"></div>
             <div class="container footer-bottom">
                 <div>
                     <img src="assets/image/visa.png">
@@ -411,7 +411,88 @@ video.addEventListener('click', function() {
                     </p>
                 </div>
                 </div>
+            <!--footeri per mobile-->
+            <div class="container footer-top-mobile">
+                <div>
+                    <img src="assets/image/logo.png">
+                    
+                    <div class="social-media">
+                        <ul>
+                            <li><a href="https://www.facebook.com/roamerofswitzerland" target="_blank" ><i class="fa-brands fa-facebook fa-beat" style="color:#c6a07a;" ></i></a></li>
+                            <li><a href="https://www.instagram.com/roamerofswitzerland/" target="_blank"><i class="fa-brands fa-instagram fa-beat" style="color:#c6a07a;"></i></a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div>
+                    <button class="collapsible">Collection</button>
+                    <div class="contenti">
+                    <ul class="list">
+                        <li><a href="#">Collection</li></a>
+                        <li><a href="https://roamer.ch/collections/gents" target="_blank" >Gents</li></a>
+                        <li><a href="https://roamer.ch/collections/ladies">Ladies</li></a>
+                    
+                </div>
+                <div>
+                    <button class="collapsible">Support</button>
+                    <div class="contenti">
+                    <ul class="list">
+                        <li><a href="https://roamer.ch/pages/contact-us" target="_blank" >Contac US</li></a>
+                        <li><a href="https://roamer.ch/pages/faq" target="_blank" >FAQ</li></a>
+                        <li><a href="https://roamer.ch/collections/gents" target="_blank" >Warranty Extension</li></a>
+                        <li><a href="https://roamer.ch/pages/international-shipping-questions" target="_blank" >Shiping</li></a>
+                        <li><a href="https://roamer.ch/pages/return-refunds" target="_blank" >Return & Refunds</li></a>
+                    </ul>
+                </div>
+                <div>
+                    <button class="collapsible">PRIVACY & TERMS</button>
+                    <div class="contenti">
+                    <ul class="list">
+                        <li><a href="https://roamer.ch/pages/terms-of-service" target="_blank" >Terms of service</li></a>
+                        <li><a href="https://roamer.ch/pages/privacy-notice" target="_blank" >Privacy Policy</li></a>
+                        <li><a href="https://roamer.ch/pages/terms-of-service" target="_blank" >Term of Use</li></a>
+                        <li><a href="https://roamer.ch/pages/cookie-notice" target="_blank" >Cookie Notice</li></a>
+                    </ul>
+                </div>
+                <div>
+                    <br><h3>Subscribe To Our Newsletters</h3>
+                    <form action="#"><i class="fa-regular fa-envelope" style="color: #c6a07a;"></i> 
+                        <input class="input" type="email" name="email" placeholder="name@email.com" />
+                        <button type="submit">GO</button>
+                    </form>
+                </div>
             </div>
+                </div></div></div>
+            <div class="container footer-bottom-mobile">
+                <div>
+                    <img src="assets/image/visa.png">
+                </div>
+                <div class="footerleft">
+                    <p>
+                        <span class="micro-logo"></span>Roamer AG | Copyright 2023 ©
+                    </p>
+                    <p>
+                       Cloned by <a href="https://www.facebook.com/agimDsherifi" target="_blank" >Agim Sherifi</a>
+                    </p>
+                </div>
+                </div>
+                <script>
+                    var coll = document.getElementsByClassName("collapsible");
+                  var i;
+                  
+                  for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function() {
+                      this.classList.toggle("active");
+                      var contenti = this.nextElementSibling;
+                      if (contenti.style.display === "block") {
+                        contenti.style.display = "none";
+                      } else {
+                        contenti.style.display = "block";
+                      }
+                    });
+                  }
+                  </script>
         </footer>
+        
 </body>
 </html>
