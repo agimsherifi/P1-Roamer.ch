@@ -1467,6 +1467,8 @@ section#world .swiss {
  padding: 10px 10px;
   
   transition: all 1s ease;
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    transition: all 1s ease;
 }
 section#world .swiss-body{
   border: none;
