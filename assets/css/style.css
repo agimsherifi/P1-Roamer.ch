@@ -26,6 +26,9 @@ body {
     width: 1200px;
     margin: 0 auto;
   }
+  .menu .mobilelogo{
+    display: none;
+  }
   
   
    header .container a{
@@ -231,7 +234,8 @@ section#why-us .reasons {
 section#why-us .card {
   padding: 40px 25px;
   background-color: #f4f4f4;
-  box-shadow: 0px 2px 85px rgb(0 0 0 / 10%);
+  
+  
   
 }
 
@@ -247,6 +251,10 @@ section#why-us .card h4 {
 
 section#why-us .card-body {
   position: relative;
+  
+}
+section#why-us .body1,.body2 {
+  border-right: 1px solid #888888;
 }
 
 
@@ -286,7 +294,7 @@ section#modelet .modelet {
   margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 0px;
+    gap: 20px;
     justify-content: center;
     text-align: center;
     
@@ -306,7 +314,7 @@ section#modelet .modelet {
   color: #fff;
   position: absolute;
   top: 10px; /* Adjust the top and left values as needed */
-  left: 50px;
+  left: 10px;
   color: white;
   font-size: 12px;
   border: 5px solid var(--primary-color);
@@ -329,12 +337,13 @@ section#modelet .modelet {
 }
 
 .image-container1:hover::after {
+  cursor: pointer;
   content: "";
   position: absolute;
-  top: 0;
-  left: 40px;
-  width: 80%;
-  height: 80%;
+  top: 50px;
+  left: 30px;
+  width: 85%;
+  height: 65%;
   background-image: url("../image/skelton2.webp");
   background-size: cover;
   opacity: 1;
@@ -349,12 +358,13 @@ section#modelet .modelet {
 }
 
 .image-container2:hover::after {
+  cursor: pointer;
   content: "";
   position: absolute;
-  top: 0;
-  left: 40px;
-  width: 80%;
-  height: 80%;
+  top: 50px;
+  left: 30px;
+  width: 85%;
+  height: 65%;
   background-image: url("../image/deep\ sea2.webp");
   background-size: cover;
   opacity: 1;
@@ -369,12 +379,13 @@ section#modelet .modelet {
 }
 
 .image-container3:hover::after {
+  cursor: pointer;
   content: "";
   position: absolute;
-  top: 0;
-  left: 40px;
-  width: 80%;
-  height: 80%;
+  top: 50px;
+  left: 30px;
+  width: 85%;
+  height: 65%;
   background-image: url("../image/rockyellow2.jpg");
   background-size: cover;
   opacity: 1;
@@ -389,12 +400,13 @@ section#modelet .modelet {
 }
 
 .image-container4:hover::after {
+  cursor: pointer;
   content: "";
   position: absolute;
-  top: 0;
-  left: 40px;
-  width: 80%;
-  height: 80%;
+  top: 50px;
+  left: 30px;
+  width: 85%;
+  height: 65%;
   background-image:  url("../image/primeline2.webp");
   background-size: cover;
   opacity: 1;
@@ -538,7 +550,7 @@ section#marketing{
   color: #fff;
   position: absolute;
   top: 10px; 
-  left: 50px;
+  left: 10px;
   color: white;
   font-size: 12px;
   border: 5px solid var(--primary-color);
@@ -549,7 +561,7 @@ section#marketing{
   color: #fff;
   position: absolute;
   top: 10px; 
-  left: 50px;
+  left: 10px;
   color: white;
   font-size: 12px;
   border: 5px solid var(--primary-color);
@@ -577,9 +589,9 @@ section#marketing{
   content: "";
   position: absolute;
   top: 0;
-  left: 30px;
-  width: 80%;
-  height: 88%;
+  left: 0px;
+  width: 100%;
+  height: 89.5%;
   background-image: url("../image/tempomaster2.webp");
   background-size: cover;
   opacity: 1;
@@ -594,12 +606,13 @@ section#marketing{
 }
 
 .image-container6:hover::after {
+  cursor: pointer;
   content: "";
   position: absolute;
   top: 0;
-  left: 30px;
-  width: 80%;
-  height: 88%;
+  left: 0px;
+  width: 100%;
+  height: 89.5%;
   background-image: url("../image/valias2.webp");
   background-size: cover;
   opacity: 1;
@@ -614,12 +627,13 @@ section#marketing{
 }
 
 .image-container7:hover::after {
+  cursor: pointer;
   content: "";
   position: absolute;
   top: 0;
-  left: 30px;
-  width: 80%;
-  height: 88%;
+  left: 0px;
+  width: 100%;
+  height: 89.5%;
   background-image: url("../image/venus2.webp");
   background-size: cover;
   opacity: 1;
@@ -634,12 +648,13 @@ section#marketing{
 }
 
 .image-container8:hover::after {
+  cursor: pointer;
   content: "";
   position: absolute;
   top: 0;
-  left: 30px;
-  width: 80%;
-  height: 88%;
+  left: 0px;
+  width: 100%;
+  height: 89.5%;
   background-image:  url("../image/searock2.webp");
   background-size: cover;
   opacity: 1;
@@ -966,12 +981,15 @@ footer .footer-bottom a {
     
     overflow-x: hidden; 
 }
+header .container a{
+  display: none;
+}
   .menu {
     position: fixed;
     display: block;
-    top: 223px;
-    height: 35px;
-    padding-top: 19px;
+    top: 0px;
+    height: 45px;
+    padding-top: 10px;
     left: 0;
     width: 100%;
     background-color: #FFFFFF;
@@ -984,6 +1002,9 @@ footer .footer-bottom a {
     height: 10px;
    
     
+}
+.menu .mobilelogo{
+  display: inline-block;
 }
   
   .content {
@@ -999,7 +1020,7 @@ footer .footer-bottom a {
   }
   
   
-  .mini-logo {
+  .menu .mini-logo {
     position: fixed;
     top: 9px;
     left: 10px;
@@ -1032,12 +1053,13 @@ a:hover {
   font-weight: bold;
   width: 100px;
   font-size: 20px;
+  gap: 10px;
 }
 .button2 {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  padding-left: 35px;
+  justify-content: start;
+  padding-left: 10px;
   border: none;
   color: var(--primary-color);
   text-decoration: none;
@@ -1061,20 +1083,28 @@ a:hover {
 main#main {
   height: 800px;
 }
+#main .ballina{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
 .ballina,.ballina1
 {
   left: 0px;
   
 }
+.menu .mobilelogo{
+  padding-left: 35px;
+  width: 90px;
+}
   .overlay {
     position: absolute;
-    padding-left: 27px;
+    padding-left: 0px;
     left: 0px;
-    width: 85%;
-    height: 85%;
+    width: 100%;
+    height: 100%;
     display: flex;
     grid-column: auto;
-    
+    top: -80px;
     justify-content: center;
     align-items: center;
   }
@@ -1088,15 +1118,31 @@ main#main {
     width: 190%;
     margin-bottom: 10px;
   }
+  section#why-us{
+    padding-top: 0px;
+    margin-top: -20px;
+    height: 250px;
+  }
+  section#why-us .body1,.body2 {
+    border-right: none;
+    }
+  section#why-us .card {
+    border-right: none;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    transition: all 1s ease;
+  }
 
   .pershkrimet{
-    translate: -1.5% -100%;
-    height: 250px;
+    translate: -1.5% -82%;
+    height: 200px;
     display: grid;
     font-size: 20px;
     align-items: center;
     width: 400px;
     margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+    
   }
   .pershkrimet h1,h6{
     color: white;
@@ -1106,8 +1152,12 @@ main#main {
     
     justify-self: center;
   }
-  
-  
+  .pershkrimet h6{
+    display: none;
+  }
+  .pershkrimet h1{
+    font-size: 28px;
+  }
   .pershkrimet h1{
     letter-spacing: 1px;
     margin-top: 0px;
@@ -1116,6 +1166,9 @@ main#main {
   .pershkrimet h5{
     color: var(--primary-color);
     justify-self: center;
+  }
+  section#why-us .reasons{
+    
   }
   .btn {
     font-size: 14px;
@@ -1138,6 +1191,9 @@ main#main {
     border: 2px solid white;
   }
 
+  section#new-season{
+    height: 130px;
+  }
   section#modelet{
     padding-bottom: 30px;
   }
@@ -1152,16 +1208,20 @@ main#main {
       
       font-size: 10px;
   }
+  section#modelet{
+    padding-bottom: 0px;
+  }
   section#modelet .modelet {
     
     margin-top: 10px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 0px;
+      gap: 20px;
       justify-content: center;
       text-align: center;
-      width: 65%;
+      width: 63%;
       font-size: 10px;
+      padding-left: 5px;
   }
   
   .modelet h3{
@@ -1181,7 +1241,7 @@ main#main {
     color: #fff;
     position: absolute;
     top: 10px; /* Adjust the top and left values as needed */
-    left: 20px;
+    left: 10px;
     color: white;
     font-size: 10px;
     border: 5px solid var(--primary-color);
@@ -1284,7 +1344,7 @@ main#main {
     color: #fff;
     position: absolute;
     top: 0px; 
-    left: 20px;
+    left: 10px;
     color: white;
     font-size: 12px;
     border: 5px solid var(--primary-color);
@@ -1295,7 +1355,7 @@ main#main {
     color: #fff;
     position: absolute;
     top: 0px; 
-    left: 20px;
+    left: 10px;
     color: white;
     font-size: 12px;
     border: 5px solid var(--primary-color);
@@ -1321,16 +1381,14 @@ main#main {
   .pershkrimet1{
     display: none;
   }
-  .kategori{
-    display: none;
-  }
+  
   .kategorimobile
 {
   padding: 35px 0px 25px 0px;
   display: grid;
   justify-content: center;
   text-align: center;
-  background-color: #f8f8f8;
+  background-color: white;
 }
 .kategorimobile h1{
   font-size: 30px ;
