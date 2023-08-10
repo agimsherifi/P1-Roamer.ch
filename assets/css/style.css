@@ -1,3 +1,22 @@
+/* diaologu per kerkim */
+.search-dialog {
+  display: none;
+  position: fixed;
+  top: 17%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 90000;
+}
+
+.search-dialog.active {
+  display: block;
+}
+
+
 
 :root {
   --primary-color: #c6a07a; /* Replace with your desired color value */
@@ -86,6 +105,44 @@ header nav ul {
     background-color: #ffffff;
     text-decoration: none;
     
+}
+/* Styles for the user icon */
+.fa-user {
+  cursor: pointer;
+}
+
+/* Styles for the login form */
+.login-form {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-form input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+}
+
+.login-form button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.login-form button:hover{
+  background-color: #f1f1f1;
+  color: var(--primary-color);
 }
 a {
   text-decoration: none;
@@ -337,7 +394,6 @@ section#modelet .modelet {
 }
 
 .image-container1:hover::after {
-  cursor: pointer;
   content: "";
   position: absolute;
   top: 50px;
@@ -358,7 +414,6 @@ section#modelet .modelet {
 }
 
 .image-container2:hover::after {
-  cursor: pointer;
   content: "";
   position: absolute;
   top: 50px;
@@ -379,7 +434,6 @@ section#modelet .modelet {
 }
 
 .image-container3:hover::after {
-  cursor: pointer;
   content: "";
   position: absolute;
   top: 50px;
@@ -400,7 +454,6 @@ section#modelet .modelet {
 }
 
 .image-container4:hover::after {
-  cursor: pointer;
   content: "";
   position: absolute;
   top: 50px;
@@ -585,7 +638,6 @@ section#marketing{
 }
 
 .image-container5:hover::after {
-  cursor: pointer;
   content: "";
   position: absolute;
   top: 0;
@@ -606,7 +658,6 @@ section#marketing{
 }
 
 .image-container6:hover::after {
-  cursor: pointer;
   content: "";
   position: absolute;
   top: 0;
@@ -627,7 +678,6 @@ section#marketing{
 }
 
 .image-container7:hover::after {
-  cursor: pointer;
   content: "";
   position: absolute;
   top: 0;
@@ -648,7 +698,6 @@ section#marketing{
 }
 
 .image-container8:hover::after {
-  cursor: pointer;
   content: "";
   position: absolute;
   top: 0;
@@ -748,6 +797,7 @@ padding-bottom: 95px;
 
   section#world{
     background-color:#F0F0F0 ;
+    
   }
 
   
@@ -1696,4 +1746,22 @@ padding-right: 2px;
 margin-bottom: -5px;
 
 }
+.meny {
+  display: none;
+  list-style-type: none;
+  padding: 20px;
+  background-color: #f1f1f1;
+  justify-content: left;
+}
 
+.meny li {
+  padding: 10px;
+  text-align: left;
+
+}
+.meny span {
+  display: flex;
+  padding: 10px;
+  text-align: left;
+  color: var(--primary-color);
+}
