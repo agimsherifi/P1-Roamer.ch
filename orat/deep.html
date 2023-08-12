@@ -29,7 +29,7 @@
                             <li><a href="/Roamer.html">HOME</a></li>
                             <li><a href="#">BRAND</a></li>
                             <li><a href="/collection.html">COLLECCTION</a></li>
-                            <li><a href="#">STORE LOCATOR</a></li>
+                            <li><a href="">STORE LOCATOR</a></li>
                             <li><a href="#">CUSTOMER SERVICE</a></li>
                             
                             <a href="#" class="button" >
@@ -57,87 +57,23 @@
         </nav>
         </div>
 
-          <script>
-            const userIcon = document.getElementById('userIcon');
-            const loginForm = document.getElementById('loginForm');
           
-            userIcon.addEventListener('click', () => {
-              loginForm.style.display = 'block';
-            });
-          
-            document.addEventListener('keydown', (event) => {
-              if (event.key === 'Escape') {
-                loginForm.style.display = 'none';
-              }
-            });
-          </script>
-        <script>
-            const hamburger = document.getElementById('hamburger');
-            const menuList = document.getElementById('menuList');
-          
-            hamburger.addEventListener('click', () => {
-              if (menuList.style.display === 'block') {
-                menuList.style.display = 'none';
-              } else {
-                menuList.style.display = 'block';
-              }
-            });
-          </script>
-        
-        <script>
-            window.addEventListener('scroll', function() {
-              var menu = document.querySelector('.menu');
-              var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-              var miniLogo = document.querySelector('.mini-logo')
-
-              
-
-              if (scrollPosition > 0) {
-                menu.style.top = '0';
-                menu.classList.remove('show-mini-logo');
-              } else {
-                menu.style.top = '';
-                menu.classList.add('show-mini-logo');
-              }
-            });
-          </script>
           
     </header>
     
       
     
-      <script>
-        var images = ['/assets/image/rockyellow.jpg', '/assets/image/rockyellow2.jpg', '/assets/image/rockyellow3.jpg'];
-        var currentImageIndex = 0;
-    
-        function changeImage(index) {
-          currentImageIndex = index - 1;
-          var galleryImage = document.getElementById('galleryImage');
-          galleryImage.src = images[currentImageIndex];
-          updateBubbles();
-        }
-    
-        function updateBubbles() {
-          var bubbles = document.querySelectorAll('.bubble');
-          bubbles.forEach(function(bubble, index) {
-            if (index === currentImageIndex) {
-              bubble.classList.add('active-bubble');
-            } else {
-              bubble.classList.remove('active-bubble');
-            }
-          });
-        }
-      </script>
+      
     <main id="main">
 <div class="pazari">
 <div class="imageslider">
     <div class="imageslider">
-        <img class="gallery-image" id="galleryImage" src="/assets/image/rockyellow.jpg" alt="Gallery Image">
+        <img class="gallery-image" id="galleryImage" src="/assets/image/blerjetphoto/deep.png" alt="Gallery Image">
       </div>
       <div class="bubble-container">
-        <div class="bubble" onclick="changeImage(1)"></div>
-        <div class="bubble" onclick="changeImage(2)"></div>
-        <div class="bubble" onclick="changeImage(3)"></div>
+        <div class="bubble" onclick="changeImage(7)"></div>
+        <div class="bubble" onclick="changeImage(8)"></div>
+        <div class="bubble" onclick="changeImage(9)"></div>
       </div>
 <style>
     
@@ -146,15 +82,15 @@
 </div>
 <div class="tedhenat product">
     <h1>
-        ROCKSHELL MARK III SCUBA
+        DEEP SEA 200
     </h1>
     <br>
     <h5>
-        CHF 499.00
+        CHF 349.00
     </h5>
     <br>
     <h6>
-        SKU: 867833 41 95 02
+        SKU: 860833 41 15 70
     </h6>
     <br>
     <h5>
@@ -162,93 +98,27 @@
     </h5>
     <br>
     <p>
-        The latest evolution of one of the most famous Roamer families, the Rockshell Mark III Scuba impresses with a timeless sporty-elegant design, smartly blending modern and vintage features. 
+        One of the particularly remarkable new <span>ROAMER</span> releases of this year is the sporty-elegant <span> DEEP SEA 200</span>. With a spectacular water-resistance of 200 m, it even tolerates a jump in the pool or a dive in the ocean. Aside from diving, this statement watch is a guaranteed eye-catcher on the wrist and scores with a sophisticated mix of precise function and stylish design.
     </p>
     <br>
     <p>
-        Water-resistant up to 20 ATM, the Rockshell Mark III Scuba is a perfect companion for water sports and outdoor activities, but also a beautiful watch to wear for any occasion. The rotating bezel is excellently labeled for perfectlegibility. It allows the diving time to be accurately tracked in minutes thanksto the triangular luminous marker. A screw-down fluted crown assures that no water can find its way into the Scuba, even at a diving depth of 200 m.
+        The <span> DEEP SEA 200 </span> features an anti-reflection sapphire crystal and a 43 mm tonneau-shaped stainless steel case housing a trusted high quality Swiss Made quartz movement. The decorative wave-pattern guilloché make the silver, black, or blue dial a classy eye-catcher worn on a stainless steel bracelet. A refreshing modern appeal emanates from a model variant with orange dial, and the blue dial is also realized with gunmetal case or bracelet or in two tone design.
     </p>
+    
     <br>
-    <p>For better legibility even underwater, the Scuba features phosphorescent hands and indices under anti-reflective sapphire crystal. The eye-catching arrow design of the hour hand, a visually contrasting sword-shaped minute hand and the slim arrow-shaped second hand also make it easy to read thetime, even in unfavorable lighting conditions.
-    </p>
-    <br>
-    <p>The Rockshell Mark III Scuba is backed up by a first-rate Swiss made Ronda 515 precision quartz movement housed in a stainless steel case. Its 44 mm diameter fits nicely on a wrist without being too large or too small, and comes either in a stainless steel-look, with gold plating or in a two-tone design, depending on the model variant. The colour-coordinated stainless steel bracelet is designed with a push button butterfly buckle for secure comfort and seamless appearance.    
-    </p>
-    <br>
-    <button class="blej add-to-cart-btn"> ADD TO CART</button>
+    <button class="blej add-to-cart-btn" data-id="3"> ADD TO CART</button>
     
 </div>
 <!-- Cart Display (hidden by default) -->
-<div class="cart-display" style="display: none;">
+<div class="cart-display">
   <h2>Your Cart</h2>
   <ol class="cart-items"></ol>
+  <div class="total-price">
+    Total: <span id="totalAmount">CHF 349.00</span>
+  </div>
+  <button id="checkoutButton">Check Out</button>
 </div>
 
-
-
-
-
-<script>
-  const addToCartButton = document.querySelector('.add-to-cart-btn');
-  const cartIcon = document.querySelector('.cart-icon');
-  const cartCounter = document.querySelector('.cart-counter');
-  const cartDisplay = document.querySelector('.cart-display');
-  const cartItemsList = document.querySelector('.cart-items');
-  
-  let cartItems = [];
-  
-  addToCartButton.addEventListener('click', function() {
-      addToCart();
-  });
-  
-  function addToCart() {
-      // In a real scenario, you'd have an object representing the product being added
-      const product = {
-          id: cartItems.length + 1,
-          name: 'ROCKSHELL MARK III SCUBA',
-          price: 499.00,
-          quantity: 1
-      };
-      
-      cartItems.push(product);
-      updateCartCounter();
-      renderCartItems();
-  }
-  
-  function updateCartCounter() {
-      cartCounter.textContent = cartItems.length;
-  }
-  
-  function renderCartItems() {
-      cartItemsList.innerHTML = '';
-      cartItems.forEach(item => {
-          const li = document.createElement('li');
-          li.innerHTML = `
-              <span>${item.name} - CHF ${item.price.toFixed(2)}</span>
-              <button class="remove-item" data-id="${item.id}">
-                  <i class="fas fa-trash-alt"></i>
-              </button>
-          `;
-          cartItemsList.appendChild(li);
-      });
-      cartDisplay.style.display = 'block';
-      
-      // Add event listeners to delete buttons
-      const removeButtons = document.querySelectorAll('.remove-item');
-      removeButtons.forEach(button => {
-          button.addEventListener('click', function() {
-              const itemId = parseInt(button.getAttribute('data-id'));
-              removeFromCart(itemId);
-          });
-      });
-  }
-  
-  function removeFromCart(itemId) {
-      cartItems = cartItems.filter(item => item.id !== itemId);
-      renderCartItems();
-      updateCartCounter();
-  }
-</script>
 </div>
     </main>
     <div class="container">
@@ -273,38 +143,22 @@
                     </div>
                     <button class="technic " class="technic1">MOVMENT</button>
                     <div class="black">
-                        <div class="option"><h3>TYPE</h3> <span>Swiss Made Ronda 515</span> </div>
+                        <div class="option"><h3>FUNCTIONS</h3> <span>Quartz Wrist-Watch - Analog - Battery</span> </div>
+                        <div class="option"><h3>TYPE</h3> <span>Swiss Made Ronda 515 A1C3</span> </div>
                         
                         
                     </div>
                 <button class="technic " class="technic1">STRAP</button>
                 <div class="black">
-                    <div class="option"><h3>COLOR</h3> <span>Black</span> </div>
-                    <div class="option"><h3>MATERIAL</h3> <span>Rubber</span> </div>
+                    <div class="option"><h3>BUCKLE</h3> <span>Butterfly Clasp (push button)</span> </div>
+                    <div class="option"><h3>COLOR</h3> <span>silver</span> </div>
+                    <div class="option"><h3>MATERIAL</h3> <span>Stainless Steel</span> </div>
+                    <div class="option"><h3>TYPE</h3> <span>Bracelet</span> </div>
                     <br>
                     
                 </div>
     </div>
-    <script>
-        var coll = document.getElementsByClassName("technic");
-        var i;
-        
-        for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var contenti = this.nextElementSibling;
-            if (contenti.style.display === "grid") {
-              contenti.style.display = "none";
-            } else {
-              contenti.style.display = "grid";
-            }
-          });
-        
-          // Hide content by default
-          var content = coll[i].nextElementSibling;
-          content.style.display = "none";
-        }
-        </script>
+    
         
         <div class="instruksionet">
             <div><a href="https://roamer.ch/pages/store-locator" target="_blank" class="btn">FIND A RETAILER</a>
@@ -315,31 +169,17 @@
             
         </div>
 
-    
-<style>
-    
-  </style>
-  <div class="share-buttons"> <span> Share </span>
-    <div class="share-button" onclick="shareOnFacebook()">
-        <img src="/assets/image/fb.png">
-    </div> <br>
-    <div class="share-button" onclick="shareOnTwitter()">
-        <img src="/assets/image/twitter.png">
-    </div>
-  </div>
-
-  <script>
-    function shareOnFacebook() {
-      var url = encodeURIComponent(window.location.href);
-      window.open('https://www.facebook.com/sharer/sharer.php?u=' + url, '_blank');
-    }
-
-    function shareOnTwitter() {
-      var url = encodeURIComponent(window.location.href);
-      var text = encodeURIComponent('Check out this awesome page!');
-      window.open('https://twitter.com/intent/tweet?url=' + url + '&text=' + text, '_blank');
-    }
-  </script>
+        <div class="share-buttons">
+            <span>Share</span>
+            <div class="share-button" id="facebookButton">
+              <img src="/assets/image/fb.png">
+            </div><br>
+            <div class="share-button" id="twitterButton">
+              <img src="/assets/image/twitter.png">
+            </div>
+          </div>
+        
+          
     
         <section id="world">
         <div class="container">
@@ -502,27 +342,25 @@
                     </p>
                 </div>
                 </div>
-                <script>
-                    var coll = document.getElementsByClassName("collapsible");
-                  var i;
-                  
-                  for (i = 0; i < coll.length; i++) {
-                    coll[i].addEventListener("click", function() {
-                      this.classList.toggle("active");
-                      var contenti = this.nextElementSibling;
-                      if (contenti.style.display === "block") {
-                        contenti.style.display = "none";
-                      } else {
-                        contenti.style.display = "block";
-                      }
-                    });
-                    // Hide content by default
-          var content = coll[i].nextElementSibling;
-          content.style.display = "none";
-        
-                  }
-                  </script>
+                
         </footer>
-        
+        <script src="/assets/js/login.js"> </script>
+        <script src="/assets/js/hamburgermobile.js"> </script>
+        <script src="/assets/js/addtocart.js"> </script>
+        <script src="/assets/js/minilogo.js"> </script>
+        <script src="/assets/js/imageslider.js"> </script>
+        <script src="/assets/js/audio.js"></script>
+        <script src="/assets/js/technical.js">  </script>
+        <script src="/assets/js/foter.js"> </script>
+
+        <script type="module" > 
+            import { shareOnFacebook, shareOnTwitter } from '/assets/js/sharefunctions.js';
+  
+              const facebookButton = document.getElementById('facebookButton');
+              const twitterButton = document.getElementById('twitterButton');
+              
+              facebookButton.addEventListener('click', shareOnFacebook);
+              twitterButton.addEventListener('click', shareOnTwitter);
+              </script>
 </body>
 </html>
