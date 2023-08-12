@@ -1,3 +1,11 @@
+/*shfaqja butonit per blejren e produketve */
+.meny span{
+  display: flex;
+  margin-top: -20px;
+  padding-left: 5px;
+}
+
+
 /* diaologu per kerkim */
 .search-dialog {
   display: none;
@@ -1085,18 +1093,16 @@ a {
 a:hover {
   color: var(--primary-color);
 }
-.button {
-  display: none;
-  
-}
 
-.button1 {
+
+.button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding-left: 550px;
+  padding-left: 10px;
   padding-right: 15px;
   padding-bottom: 30px;
+  padding-top: 10px;
   border: none;
   color: var(--primary-color);
   text-decoration: none;
@@ -1119,6 +1125,7 @@ a:hover {
   padding-top: 0px;
   gap: 10px;
 }
+
 
 .button1 i {
   margin-right: 5px;
@@ -1143,8 +1150,9 @@ main#main {
   
 }
 .menu .mobilelogo{
-  padding-left: 35px;
+  padding-left: 150px;
   width: 90px;
+  margin-top: -30px;
 }
   .overlay {
     position: absolute;
@@ -1750,18 +1758,67 @@ margin-bottom: -5px;
   display: none;
   list-style-type: none;
   padding: 20px;
-  background-color: #f1f1f1;
+  background-color: #222222;
   justify-content: left;
+  height: 800px;
+  opacity: 95%;
+  margin-top: 0px;
+  width: 80%;
 }
 
 .meny li {
   padding: 10px;
   text-align: left;
+  color: white;
+}
 
+.meny li a {
+  color: wheat;
 }
 .meny span {
   display: flex;
   padding: 10px;
   text-align: left;
   color: var(--primary-color);
+}
+
+.search-dialog {
+  display: none;
+  position: fixed;
+  width: 60%;
+  margin-top: 250px;
+  transform: translate(-90%, -50%);
+  
+}
+
+.search-dialog.active {
+  display: block;
+}
+
+.login-form {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 130%);
+}
+  .image-container img {
+    width: 100%; /* Adjust the image width for mobile */
+    margin-left: -600px; /* Remove padding for mobile */
+}
+.watch-link h3 {
+  margin-left: -700px; /* Adjust padding for mobile */
+}
+.modeleta h4{
+  margin-left: -770px; /* Adjust padding for mobile */
+}
+#hamburger {
+  display: block;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Add transition for smooth animation */
+}
+
+#hamburger.active i::before {
+  content: '\f00d'; /* Change the icon when active (e.g., horizontal bars) */
+}
 }

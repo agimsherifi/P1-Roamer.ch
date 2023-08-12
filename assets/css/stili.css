@@ -111,8 +111,12 @@ padding-bottom: 20px;
     font-size: 14px;
 }
 .tedhenat p{
-    font-weight: bold;
+    font-weight: normal;
     line-height: 1.8;
+}
+
+.tedhenat span{
+ font-weight: 900; 
 }
 
 
@@ -130,6 +134,10 @@ padding-bottom: 20px;
     background-color: var(--primary-color);
 }
 /* shfaqja e porduktit qe e ke hedh ne shport */
+.cart-display {
+  display: none;
+  /* Other styling properties... */
+}
 
 .cart-display{
   padding-left: 220px;
@@ -140,7 +148,28 @@ padding-bottom: 20px;
   color: var(--primary-color);
 }
 
+.cart-display button{
+  border: 1px solid #888888;
+    width: 80px;
+    height: 30px;
+    background-color: #888888;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.cart-display button:hover
+{
+  
+    background-color: red;
+}
 
+.cart-display #checkoutButton:hover{
+    background-color: green;
+}
+
+.cart-display #totalAmount{
+  font-weight: bold;
+}
 
 .black{
     display: grid;
@@ -179,6 +208,9 @@ padding-bottom: 20px;
   }
   .option span{
     color: #BCBCBC;
+  }
+  .option a{
+    cursor: pointer;
   }
 
   .bubble-container {
@@ -237,7 +269,7 @@ padding-bottom: 20px;
   }
   @media (max-width: 576px){
 main#main{
-  height: 2150px;
+  height: 2350px;
 }
 .share-button,.share-buttons {
   display: none;
@@ -253,14 +285,22 @@ main#main{
     display: none;
     list-style-type: none;
     padding: 20px;
-    background-color: #f1f1f1;
+    background-color: #222222;
     justify-content: left;
+    height: 800px;
+    opacity: 95%;
+    margin-top: 13px;
+    width: 80%;
   }
-
+  
   .meny li {
     padding: 10px;
     text-align: left;
-
+    color: white;
+  }
+  
+  .meny li a {
+    color: wheat;
   }
   .meny span {
     display: flex;
@@ -268,7 +308,6 @@ main#main{
     text-align: left;
     color: var(--primary-color);
   }
-
 
 .pazari{
   display: flex;

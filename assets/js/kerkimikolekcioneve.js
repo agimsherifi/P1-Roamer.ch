@@ -5,14 +5,14 @@ document.addEventListener('DOMContentLoaded', function() {
     var searchButton = document.getElementById('search-button');
     
     var watches = [
-    { name: 'COMPETENCE SKELETON III', price: 829.00, imgSrc: 'assets/image/skelton.webp' },
-        { name: 'DEEP SEA 200', price: 349.00, url: 'https://roamer.ch/collections/competence-skeleton-iii/products/competence-skeleton-3-silver-43-43-0-mm-l-29', imgSrc: 'assets/image/deep sea.webp'  },
+        { name: 'COMPETENCE SKELETON III', price: 829.00, url: 'orat/skeleton.html', imgSrc: 'assets/image/skelton.webp' },
+        { name: 'DEEP SEA 200', price: 349.00, url: 'orat/deep.html', imgSrc: 'assets/image/deep sea.webp'  },
         { name: 'ROCKSHELL MARK III SCUBA', price: 499.00, url: 'orat/rockshel.html', imgSrc: 'assets/image/rockyellow.jpg' },
-        { name: 'PRIMELINE DAY DATE II', price: 799.00, url: 'https://roamer.ch/collections/competence-skeleton-iii/products/competence-skeleton-3-silver-43-43-0-mm-l-29', imgSrc: 'assets/image/primeline.webp'  },
-        { name: 'TEMPOMASTER CHRONO', price: 519.00, url: 'https://roamer.ch/collections/competence-skeleton-iii/products/competence-skeleton-3-silver-43-43-0-mm-l-29', imgSrc: 'assets/image/tempomaster.webp'  },
-        { name: 'VALIAS GENTS', price: 249.00, url: 'https://roamer.ch/collections/competence-skeleton-iii/products/competence-skeleton-3-silver-43-43-0-mm-l-29', imgSrc: 'assets/image/valias.webp'  },
-        { name: 'VENUS DIAMOND', price: 329.00, url: 'https://roamer.ch/collections/competence-skeleton-iii/products/competence-skeleton-3-silver-43-43-0-mm-l-29', imgSrc: 'assets/image/venus.webp'  },
-        { name: 'SEAROCK AUTOMATIC', price: 829.00, url: 'https://roamer.ch/collections/competence-skeleton-iii/products/competence-skeleton-3-silver-43-43-0-mm-l-29', imgSrc: 'assets/image/searock.webp'  },
+        { name: 'PRIMELINE DAY DATE II', price: 799.00, url: 'orat/primeline.html', imgSrc: 'assets/image/primeline.webp'  },
+        { name: 'TEMPOMASTER CHRONO', price: 519.00, url: 'orat/tempomaster.html', imgSrc: 'assets/image/tempomaster.webp'  },
+        { name: 'VALIAS GENTS', price: 249.00, url: 'orat/valias.html', imgSrc: 'assets/image/valias.webp'  },
+        { name: 'VENUS DIAMOND', price: 329.00, url: 'orat/venus.html', imgSrc: 'assets/image/venus.webp'  },
+        { name: 'SEAROCK AUTOMATIC', price: 829.00, url: 'orat/searock.html', imgSrc: 'assets/image/searock.webp'  },
     ];
 
     searchIcon.addEventListener('click', function() {
